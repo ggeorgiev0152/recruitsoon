@@ -72,7 +72,9 @@ html {
     animation: slideUp 1s ease-out 0.8s forwards;
 }
 
-.social-link {
+.social-link,
+.social-link:visited,
+.social-link:active {
     font-size: 1rem;
     font-weight: 600;
     color: var(--text-secondary);
@@ -284,6 +286,8 @@ html {
     0% {
         transform: translate(0, 0) skew(0deg);
         opacity: 1;
+        color: #ff3333;
+        text-shadow: 0 0 2px rgba(255, 51, 51, 0.3);
     }
 
     2% {
@@ -301,8 +305,8 @@ html {
     }
 
     32% {
-        transform: translate(2px, -1px) skew(4deg);
-        opacity: 0.9;
+        transform: translate(2px, -1px) skew(2deg);
+        opacity: 0.95;
         filter: blur(1px);
     }
 
@@ -317,7 +321,7 @@ html {
     }
 
     57% {
-        transform: translate(-1px, 2px) skew(-3deg);
+        transform: translate(-1px, 2px) skew(-1deg);
     }
 
     59% {
@@ -337,5 +341,22 @@ html {
     84% {
         transform: translate(0, 0) skew(0deg);
         opacity: 1;
+    }
+
+    90% {
+        transform: translate(-1px, 0) skew(-2deg);
+        opacity: 1;
+    }
+
+    92% {
+        transform: translate(0, 0) skew(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 0) skew(0deg);
+        opacity: 1;
+        color: #ff3333;
+        text-shadow: 0 0 2px rgba(255, 51, 51, 0.3);
     }
 }
